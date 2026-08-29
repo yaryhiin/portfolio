@@ -1,2 +1,49 @@
-@use "./base/variables";
-@use "./base/global";
+@use "./variables";
+@use "./global";
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &:first-child {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#about,
+#home,
+#projects,
+#contact {
+  scroll-margin-top: 55px;
+}
+
+.appShell {
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 30px;
+}

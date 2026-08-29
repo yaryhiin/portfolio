@@ -1,0 +1,32 @@
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: fit-content;
+  gap: 30px;
+
+  div {
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--surface);
+    padding: 15px;
+    border: 2px solid var(--accent-soft);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills {
+    gap: 50px;
+    div {
+      padding: 10px;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
