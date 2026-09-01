@@ -3,6 +3,7 @@ import styles from "./Header.module.scss";
 const Header = () => {
   return (
     <div className={`header ${styles.header}`}>
+      <h2>TY</h2>
       <div className={styles.navButtons}>
         <a className={styles.navButton} href="#home">
           Home
