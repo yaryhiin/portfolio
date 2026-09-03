@@ -1,5 +1,11 @@
 @use "./variables";
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .title {
   font-size: var(--fs-2xl);
 }

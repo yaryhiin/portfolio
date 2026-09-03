@@ -3,7 +3,8 @@ import { skills } from "../../data/skills.ts";
 
 const Skills = () => {
   return (
-    <section id="skills">
+    <div className={styles.skillsContainer}>
+      <h2 className={`${styles.title} title`}>Core stack</h2>
       <div className={styles.skills}>
         {skills &&
           skills.map((skill) => (
@@ -12,7 +13,7 @@ const Skills = () => {
             </div>
           ))}
       </div>
-    </section>
+    </div>
   );
 };
 

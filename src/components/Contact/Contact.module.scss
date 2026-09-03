@@ -2,10 +2,29 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
+
+  a {
+    transition:
+      transform 0.2s ease,
+      opacity 0.2s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+      opacity: 0.85;
+    }
+  }
 }
 
 .contact {
-    gap: 30px;
+  gap: 10px;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: var(--fs-lg);
+    text-align: center;
+    font-weight: normal;
+  }
 }
 
 @media (max-width: 768px) {

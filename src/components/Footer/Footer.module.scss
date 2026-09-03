@@ -2,6 +2,13 @@
   p,
   a {
     margin: 5px;
-    color: var(--text-muted);
+    color: var(--text-secondary);
+
+    &:last-of-type {
+      color: var(--text-muted);
+      font-size: var(--fs-sm);
+    }
   }
+
+  padding-top: 0;
 }

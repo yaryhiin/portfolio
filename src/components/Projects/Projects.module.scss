@@ -1,15 +1,26 @@
 .projects {
   gap: 50px;
+  width: 90%;
+  justify-self: center;
+
+  a {
+    width: fit-content;
+    justify-self: center;
+  }
 }
 
 .projectCard {
-  height: fit-content;
-  width: 90%;
-  display: flex;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 320px 1fr;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 30px;
+
+  &:first-of-type {
+    padding: 0 50px 50px 50px;
+  }
 }
 
 .projectInfo {
@@ -63,7 +74,7 @@
 
   a {
     background-color: var(--accent);
-    width: 80px;
+    width: 100px;
     font-size: var(--fs-base);
     padding: 10px;
     text-align: center;
@@ -87,10 +98,38 @@
   }
 }
 
+@media (max-width: 1040px) {
+  .projects {
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .projectCard {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     width: fit-content;
-    max-width: 400px;
+    padding: 20px;
+    &:first-of-type {
+      padding: 0 20px 20px 20px;
+    }
+  }
+
+  .projectInfo {
+    width: 70%;
+    justify-self: center;
+  }
+
+  .projects {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 530px) {
+  .projectInfo {
+    width: 100%;
+  }
+
+  .projectImage {
+    max-height: 25rem;
   }
 }
