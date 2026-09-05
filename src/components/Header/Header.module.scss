@@ -35,11 +35,14 @@
     color: var(--text-secondary);
     text-decoration: none;
 
-    &:hover {
+    transition: color 0.3s ease;
+
+    &:hover,
+    &.active {
       color: var(--accent);
     }
     &:active {
-      color: var(--text);
+      color: var(--text-secondary);
     }
   }
 }
