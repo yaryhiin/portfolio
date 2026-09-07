@@ -10,17 +10,18 @@ const Contact = () => {
           href="mailto:tim@yaryhin.com"
           target="_blank"
           className={styles.method}
-          aria-label="Email Tim"
         >
-          <img src="/images/contact/mail.png"></img>
+          <img src="/images/contact/mail.png" alt="Email Tim"></img>
         </a>
         <a
           href="https://t.me/yaryhin"
           target="_blank"
           className={styles.method}
-          aria-label="Message Tim on Telegram"
         >
-          <img src="/images/contact/telegram.png"></img>
+          <img
+            src="/images/contact/telegram.png"
+            alt="Message Tim on Telegram"
+          ></img>
         </a>
       </div>
     </section>

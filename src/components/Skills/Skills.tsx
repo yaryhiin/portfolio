@@ -9,7 +9,7 @@ const Skills = () => {
         {skills &&
           skills.map((skill) => (
             <div className={styles.icon} key={skill}>
-              <img src={`/images/logos/${skill}.png`}></img>
+              <img src={`/images/logos/${skill}.png`} alt={skill}></img>
             </div>
           ))}
       </div>

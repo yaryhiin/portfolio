@@ -13,7 +13,11 @@ const Projects = () => {
               href={project.liveUrl}
               target="_blank"
             >
-              <img src={project.image} className={styles.projectImage}></img>
+              <img
+                src={project.image}
+                className={styles.projectImage}
+                alt={project.imageAlt}
+              ></img>
             </a>
             <div>
               <div className={styles.projectInfo}>
