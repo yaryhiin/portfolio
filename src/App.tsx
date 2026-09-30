@@ -34,9 +34,6 @@ function App() {
     return () => observer.disconnect();
   }, []);
 
-  useEffect(() => {
-    console.log("Active Section:", activeSection);
-  }, [activeSection]);
   return (
     <div className="appShell">
       <main>
